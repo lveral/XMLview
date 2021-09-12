@@ -1,17 +1,19 @@
 <resources>
     <string name="app_name">XMLview</string>
     <string name="access">Владелец договора может выдать другим людям <u><font color='gray'>доступ на управление интернетом</font></u></string>
-    <string name="text_street">\t\tУл. Братьев Кашириных, д. №12 5<font color='gray'>кв.<br>\t\t№12345678</br><br>\t\tИнтернет</br></font></string>
-    <string name="second_tariff">\t\tУлыбка (бесплатно)</string>
-    <string name="second_speed">\t\tСкорость до 100 Мбит/с</string>
+    <string name="first_address">Ул. Братьев Кашириных, д. №12 5<font color='gray'> кв.</font></string>
+    <string name="first_number">№12345678</string>
+    <string name="first_internet">Интернет</string>
+    <string name="second_tariff">Улыбка (бесплатно)</string>
+    <string name="second_speed">Скорость до 100 Мбит/с</string>
     <string name="second_price">0 ₽/мес</string>
-    <string name="third_tariff">\t\tКабельное телевидение</string>
-    <string name="third_speed">\t\tБолее 200 каналов</string>
+    <string name="third_tariff">Кабельное телевидение</string>
+    <string name="third_speed">Более 200 каналов</string>
     <string name="third_price">140 ₽/мес</string>
     <string name="txt_name">Евгений Д.Ч.</string>
     <string name="txt_number"><font color='gray'>Лицевой счет:</font> №12345678</string>
     <string name="txt_common">Общее</string>
-    <string name="txt_tariff">Тариф</string>
+    <string name="txt_tariff">Тарифы</string>
     <string name="txt_setting">Настройки</string>
     <string name="txt_active">Активные</string>
     <string name="txt_rec">Рекомендуемые</string>
