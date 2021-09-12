@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="txt_head" />
+
+    <TextView
+        android:id="@+id/txt_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Вкл./выкл. интернет"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/txt_head"
+        app:layout_constraintStart_toStartOf="@id/txt_head"
+        app:layout_constraintTop_toTopOf="@id/txt_head" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_left"
+        app:layout_constraintBottom_toBottomOf="@id/txt_head"
+        app:layout_constraintEnd_toStartOf="@id/txt_on_off"
+        app:layout_constraintStart_toStartOf="@id/txt_head"
+        app:layout_constraintTop_toTopOf="@id/txt_head"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_alarms"
+        app:layout_constraintBottom_toBottomOf="@id/txt_head"
+        app:layout_constraintEnd_toEndOf="@id/txt_head"
+        app:layout_constraintTop_toTopOf="@id/txt_head"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/btn_power"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#063970"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_power_settings_new_24"
+        app:circularflow_radiusInDP="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Функция деактивирована"
+        android:textColor="#09639d"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:constraint_referenced_ids="btn_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_power" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:text="Отключите домашний интернет в один клик из любой точки планеты и контролируйте доступ устройств к Сети"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:constraint_referenced_ids="txt_fun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="@string/access"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:constraint_referenced_ids="txt_fun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        tools:itemCount="1"
+        tools:listitem="@layout/first_item"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
